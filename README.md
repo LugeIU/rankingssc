@@ -1,20 +1,21 @@
-# TFT Bootcamp Việt Nam – Set 19
+# SSC Bootcamp Set 19
 
-Trang web tĩnh cho sự kiện leo rank TFT theo format BoxBox Bootcamp (server Việt Nam).
+Trang web sự kiện leo rank TFT (server Việt Nam), format theo BoxBox Bootcamp Set 18.
 
-- `index.html`: toàn bộ trang (HTML + CSS + JS, không cần build).
+- `index.html`: giao diện (HTML + CSS + JS, không cần build)
+- `api/players.js`: hàm máy chủ Vercel (đăng ký, danh sách, rank từ Riot API)
 
-## Deploy lên Vercel
+## Cài đặt trên Vercel
 
-1. Đẩy repo này lên GitHub.
-2. Vào vercel.com, chọn Add New > Project, rồi Import repo.
-3. Framework Preset: **Other**. Để trống Build Command và Output Directory.
-4. Bấm Deploy. Mỗi lần push lên nhánh `main`, Vercel tự deploy lại.
+1. Import repo vào Vercel, Framework Preset: **Other**.
+2. Tab Storage (hoặc Marketplace): thêm **Upstash Redis** và nối vào project (tự tạo biến môi trường KV_REST_API_URL, KV_REST_API_TOKEN).
+3. Settings > Environment Variables, thêm:
+   - `RIOT_API_KEY`: key từ developer.riotgames.com (key dev hết hạn sau 24 giờ, nên đăng ký Personal/Production key cho sự kiện)
+   - `ADMIN_KEY`: mã bí mật do bạn tự đặt, dùng để xóa người chơi
+4. Redeploy.
 
-## Chỉnh nhanh (đầu phần `<script>` trong index.html)
+Xóa người chơi: mở `https://<ten-mien>/?admin`, nhập `ADMIN_KEY`, nút × sẽ hiện trong tab Danh sách.
 
-- `START`: ngày bắt đầu (hiện là 2/12/2026, giờ GMT+7)
-- `SAFE`: số ngày an toàn (10)
-- `LAST`: ngày chung cuộc (17, tức 18/12)
-- `CAP`, `PER_DIV`: số người tối đa và số người mỗi division
-- `REGION`: mã vùng lolchess (`vn`)
+## Chỉnh nhanh (đầu phần `<script>`)
+
+`START`, `SAFE`, `LAST`, `CAP`, `DEF`, `PRIZES`.

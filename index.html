@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>TFT Bootcamp Việt Nam – Set 19</title>
-<meta name="description" content="Cuộc đua leo rank sinh tồn TFT Set 19 trên server Việt Nam, theo format BoxBox Bootcamp.">
-<meta property="og:title" content="TFT Bootcamp Việt Nam – Set 19">
-<meta property="og:description" content="Đăng ký tham gia, xem thể lệ và danh sách người chơi.">
+<title>SSC Bootcamp Set 19</title>
+<meta name="description" content="SSC Bootcamp Set 19 – cuộc đua leo rank sinh tồn TFT trên server Việt Nam.">
+<meta property="og:title" content="SSC Bootcamp Set 19">
+<meta property="og:description" content="Đăng ký tham gia, xem thể lệ, danh sách và phần thưởng.">
 <meta name="theme-color" content="#6c5ce7">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
 <style>
@@ -20,44 +20,41 @@ body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-ap
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hdr);backdrop-filter:blur(12px);z-index:10}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--hdr);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .bar{max-width:960px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{font-weight:800;letter-spacing:-.02em}
-.brand i{font-style:normal;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
-nav{display:flex;gap:4px}
-nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:14px;padding:7px 14px;border-radius:999px}
+.brand{font-weight:800;letter-spacing:-.02em;white-space:nowrap}
+.brand i,h1 em{font-style:normal;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:4px;overflow-x:auto}
+nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:14px;padding:7px 13px;border-radius:999px}
 nav a.on{color:#fff;background:linear-gradient(90deg,var(--a1),var(--a2))}
 main{max-width:960px;margin:0 auto;padding:24px 16px 56px}
 .page{display:none}.page.on{display:block}
-.hero{text-align:center;padding:28px 0 8px}
-.pill{display:inline-block;font-size:13px;font-weight:600;color:var(--a1);background:color-mix(in srgb,var(--a1) 12%,transparent);padding:5px 12px;border-radius:999px}
-h1{font-size:clamp(30px,7vw,52px);line-height:1.1;letter-spacing:-.03em;margin:14px 0 10px}
-h1 em{font-style:normal;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{color:var(--muted);max-width:520px;margin:0 auto}
-.count{display:flex;justify-content:center;gap:10px;margin:24px 0 6px}
+.hero{text-align:center;padding:36px 0 8px}
+h1{font-size:clamp(34px,8vw,60px);line-height:1.1;letter-spacing:-.03em;margin:0}
+.count{display:flex;justify-content:center;gap:10px;margin:26px 0 6px}
 .count div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 0;width:76px}
 .count b{display:block;font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
 .count span{font-size:12px;color:var(--muted)}
-#cl{color:var(--muted);font-size:14px;margin:0 0 4px;text-align:center}
+#cl{color:var(--muted);font-size:14px;margin:0;text-align:center}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:22px}
 .card h2{margin:0 0 4px;font-size:20px}
 .card p.h{margin:0 0 16px;color:var(--muted);font-size:14px}
 .row{display:flex;gap:10px;flex-wrap:wrap}
-input{flex:1;min-width:200px;font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none}
+input{flex:1;min-width:180px;font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none}
 input:focus{border-color:var(--a1)}
 button,.btn{font:inherit;font-weight:700;border:0;border-radius:12px;padding:12px 20px;cursor:pointer;color:#fff;background:linear-gradient(90deg,var(--a1),var(--a2));text-decoration:none;display:inline-block}
 button:disabled{opacity:.45;cursor:not-allowed}
-.btn.o{background:transparent;color:var(--text);border:1px solid var(--line)}
-#prev{margin-top:14px;display:none;border:1px dashed var(--line);border-radius:12px;padding:14px;word-break:break-all}
-#prev small{color:var(--muted);display:block}
+.btn.o{background:transparent;color:var(--text);border:1px solid var(--line);padding:8px 14px;font-size:14px}
+#prev{margin-top:14px;display:none;border:1px dashed var(--line);border-radius:12px;padding:14px;font-size:14px}
 #prev .row{margin-top:10px}
 #msg{margin:12px 0 0;font-size:14px;min-height:20px}
 .ok{color:var(--ok)}.bad{color:var(--bad)}
 .prog{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:6px}
 .prog div{height:100%;width:0;background:linear-gradient(90deg,var(--a1),var(--a2));transition:width .4s}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:22px}
 .st{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
 .st small{color:var(--muted);display:block}.st b{font-size:20px}
 h2.pg{font-size:28px;letter-spacing:-.02em;margin:6px 0 4px}
-.steps{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:12px}
+.sub{color:var(--muted);margin:0}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px}
 .steps li{display:flex;gap:14px;align-items:flex-start}
 .steps .n{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--a1),var(--a2))}
 .steps b{display:block}.steps span{color:var(--muted);font-size:14px}
@@ -67,167 +64,221 @@ th,td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:left;whit
 th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .c{text-align:center}
 a.pl{color:var(--a1);font-weight:600;text-decoration:none}
-.x{background:none;color:var(--muted);padding:4px 8px;font-size:18px}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:99px;color:#fff;background:var(--a1)}
+.tag.t2{background:var(--a2)}
+.chips{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.chips button{background:transparent;color:var(--muted);border:1px solid var(--line);padding:6px 14px;font-size:14px}
+.chips button.on{color:#fff;border-color:transparent;background:linear-gradient(90deg,var(--a1),var(--a2))}
+.x{background:none;color:var(--muted);padding:2px 8px;font-size:18px}
 .note{font-size:13px;color:var(--muted);margin:12px 0 0}
 .empty{text-align:center;color:var(--muted);padding:28px 0}
+.pz{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:14px}
+.pz div{border:1px solid var(--line);border-radius:14px;padding:14px}
+.pz small{color:var(--muted);display:block}.pz b{display:block;font-size:18px;margin-top:4px}
+.pz span{font-size:14px;color:var(--muted)}
+.total{font-size:22px;font-weight:800}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 32px}
-@media (max-width:520px){.brand span{display:none}nav a{padding:7px 11px}}
+@media (max-width:520px){.brand span{display:none}nav a{padding:7px 10px;font-size:13px}}
 </style>
 </head>
 <body>
 <header><div class="bar">
-  <div class="brand"><i>TFT</i> <span>Bootcamp VN</span></div>
+  <div class="brand"><i>SSC</i> <span>Bootcamp</span></div>
   <nav>
     <a href="#trang-chu" data-p="trang-chu">Trang chủ</a>
     <a href="#the-le" data-p="the-le">Thể lệ</a>
     <a href="#danh-sach" data-p="danh-sach">Danh sách</a>
+    <a href="#phan-thuong" data-p="phan-thuong">Phần thưởng</a>
   </nav>
 </div></header>
 
 <main>
-<!-- TRANG CHỦ -->
 <div class="page" id="trang-chu">
   <div class="hero">
-    <span class="pill">Set 19 · Server Việt Nam</span>
-    <h1>Leo rank. Sống sót.<br><em>Đừng bị loại.</em></h1>
-    <p class="sub">Cuộc đua leo rank sinh tồn theo format BoxBox Bootcamp. 10 ngày an toàn để leo, sau đó người đứng cuối sẽ lần lượt bị loại.</p>
+    <h1><em>SSC Bootcamp</em> Set 19</h1>
     <div class="count" id="count"></div>
     <p id="cl"></p>
   </div>
-
   <div class="card">
     <h2>Đăng ký tham gia</h2>
-    <p class="h">Nhập tên in-game (Riot ID) để tạo link lolchess của bạn.</p>
+    <p class="h">Nhập Riot ID và điểm cao nhất mùa 18 (xem trên lolchess) để tạo hồ sơ và được xếp tier.</p>
     <div class="row">
       <input id="rid" aria-label="Tên in-game (Riot ID)" placeholder="TênInGame#Tag" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <input id="peak" aria-label="Điểm cao nhất mùa 18" type="number" min="0" inputmode="numeric" placeholder="Điểm cao nhất mùa 18 (vd: 1015)">
       <button id="go" disabled>Đăng ký</button>
     </div>
-    <div id="prev"><small>Link lolchess của bạn</small><span id="lnk"></span>
-      <div class="row"><a class="btn o" id="open" target="_blank" rel="noopener">Mở lolchess</a></div></div>
+    <div id="prev"><div id="ptier"></div>
+      <div class="row"><a class="btn o" id="l1" target="_blank" rel="noopener">Hồ sơ lolchess</a><a class="btn o" id="l2" target="_blank" rel="noopener">Mùa 18 trên lolchess</a></div></div>
     <p id="msg"></p>
     <div style="margin-top:14px"><small id="cnt" style="color:var(--muted)"></small><div class="prog"><div id="bar"></div></div></div>
   </div>
-
   <div class="grid">
     <div class="st"><small>Bắt đầu</small><b>2/12</b></div>
     <div class="st"><small>Ngày an toàn</small><b>10 ngày</b></div>
     <div class="st"><small>Số mạng</small><b>3 mạng</b></div>
-    <div class="st"><small>Chia</small><b>2 division</b></div>
+    <div class="st"><small>Chia</small><b>2 tier</b></div>
   </div>
 </div>
 
-<!-- THỂ LỆ -->
 <div class="page" id="the-le">
   <h2 class="pg">Thể lệ</h2>
-  <p class="sub" style="margin:0">Format lấy theo BoxBox Bootcamp Set 18, đơn giản hóa cho nhóm của chúng ta.</p>
-  <div class="card">
-    <ul class="steps">
-      <li><span class="n">1</span><div><b>Leo rank tự do</b><span>Từ 2/12, mọi người chơi ở server Việt Nam. 10 ngày đầu (2/12 – 11/12) không ai bị loại.</span></div></li>
-      <li><span class="n">2</span><div><b>3 mạng</b><span>Mỗi người có 3 mạng. Mất hết 3 mạng thì bị loại.</span></div></li>
-      <li><span class="n">3</span><div><b>Trừ mạng mỗi ngày</b><span>Từ 23:59 ngày 12/12 (GMT+7), ai nằm dưới ngưỡng rank của ngày đó trong division của mình sẽ mất 1 mạng.</span></div></li>
-      <li><span class="n">4</span><div><b>Chung cuộc</b><span>Thứ hạng lúc cắt 23:59 ngày 18/12 là kết quả cuối cùng, không có sudden death.</span></div></li>
-      <li><span class="n">5</span><div><b>Xác minh rank</b><span>Dùng trang lolchess của từng người, chốt đúng giờ cắt mỗi ngày.</span></div></li>
-    </ul>
-  </div>
+  <p class="sub">Format lấy theo BoxBox Bootcamp Set 18, đơn giản hóa cho SSC.</p>
+  <div class="card"><ul class="steps">
+    <li><span class="n">1</span><div><b>Chia tier</b><span>Dựa trên điểm cao nhất mùa 18: trên 1000 điểm vào Tier 1, còn lại vào Tier 2. Mỗi tier tính ngưỡng riêng.</span></div></li>
+    <li><span class="n">2</span><div><b>10 ngày an toàn</b><span>Từ 2/12 đến 11/12, mọi người leo rank trên server Việt Nam và không ai bị loại.</span></div></li>
+    <li><span class="n">3</span><div><b>3 mạng</b><span>Mỗi người có 3 mạng. Mất hết 3 mạng thì bị loại.</span></div></li>
+    <li><span class="n">4</span><div><b>Trừ mạng mỗi ngày</b><span>Từ 23:59 ngày 12/12 (GMT+7), ai nằm dưới ngưỡng rank của ngày đó trong tier của mình sẽ mất 1 mạng.</span></div></li>
+    <li><span class="n">5</span><div><b>Chung cuộc</b><span>Thứ hạng lúc cắt 23:59 ngày 18/12 là kết quả cuối cùng, không có sudden death.</span></div></li>
+    <li><span class="n">6</span><div><b>Xác minh rank</b><span>Dùng trang lolchess của từng người, chốt đúng giờ cắt mỗi ngày.</span></div></li>
+  </ul></div>
   <div class="card">
     <h2>Ngưỡng an toàn mỗi ngày</h2>
-    <p class="h">Dưới ngưỡng Top N của ngày đó thì mất 1 mạng. Tính cho division <span id="pd"></span> người, theo tỉ lệ của BoxBox.</p>
+    <p class="h">Dưới ngưỡng Top N của ngày đó thì mất 1 mạng. Tính theo tỉ lệ của BoxBox và số người thực tế mỗi tier.</p>
     <div class="scroll"><table id="thr"></table></div>
-    <p class="note">Số người mỗi division có thể thay đổi tùy số người đăng ký thực tế.</p>
+    <p class="note">Ngưỡng được chốt theo số người mỗi tier khi đóng đăng ký. Tier chưa có người được tính theo mức mặc định 15 người.</p>
   </div>
 </div>
 
-<!-- DANH SÁCH -->
 <div class="page" id="danh-sach">
   <h2 class="pg">Danh sách người chơi</h2>
-  <p class="sub" style="margin:0" id="dsub"></p>
+  <p class="sub" id="dsub"></p>
   <div class="card">
+    <div class="chips" id="chips"></div>
     <div class="scroll"><table id="tbl"></table></div>
-    <p class="note">Chế độ thử: danh sách đang lưu trên trình duyệt này, chưa chia sẻ giữa mọi người.</p>
+    <p class="note" id="dnote"></p>
   </div>
 </div>
+
+<div class="page" id="phan-thuong">
+  <h2 class="pg">Phần thưởng</h2>
+  <p class="sub">Tổng ngân sách <span class="total" id="tot"></span></p>
+  <div class="card"><h2>Tier 1</h2><div class="pz" id="pz1"></div></div>
+  <div class="card"><h2>Tier 2</h2><div class="pz" id="pz2"></div></div>
+  <div class="card"><h2>Giải đặc biệt</h2><div class="pz" id="pz3"></div></div>
+</div>
 </main>
-<footer>Bản nền để kiểm tra giao diện · TFT Bootcamp VN</footer>
+<footer>SSC Bootcamp Set 19</footer>
 
 <script>
-var START=new Date("2026-12-02T00:00:00+07:00"), DAY=864e5;
-var SAFE=10, LAST=17, CAP=30, PER_DIV=15, REGION="vn", KEY="bootcamp.players.v1";
-var BOX=[50,40,30,24,20,16,12], BASE=60;
+var START=new Date("2026-12-02T00:00:00+07:00"),DAY=864e5;
+var SAFE=10,LAST=17,CAP=30,DEF=15,REGION="vn",LS="ssc.players.v2",API="/api/players";
+var BOX=[50,40,30,24,20,16,12],BASE=60;
+var TV={IRON:"Sắt",BRONZE:"Đồng",SILVER:"Bạc",GOLD:"Vàng",PLATINUM:"Bạch kim",EMERALD:"Ngọc lục bảo",DIAMOND:"Kim cương",MASTER:"Cao thủ",GRANDMASTER:"Đại cao thủ",CHALLENGER:"Thách đấu"};
+var ORD=Object.keys(TV),DV={IV:0,III:1,II:2,I:3};
+var PRIZES=[
+ {g:1,t:"Hạng 1",n:"Thẻ nạp Riot Points + danh hiệu “Chủ nhân SSC Bootcamp S19”",v:250000},
+ {g:1,t:"Hạng 2",n:"Thẻ nạp Riot Points",v:125000},
+ {g:1,t:"Hạng 3",n:"Voucher trà sữa",v:75000},
+ {g:2,t:"Hạng 1",n:"Thẻ nạp Riot Points",v:200000},
+ {g:2,t:"Hạng 2",n:"Voucher đồ ăn",v:100000},
+ {g:2,t:"Hạng 3",n:"Voucher trà sữa",v:50000},
+ {g:3,t:"Vua leo rank",n:"Lót chuột gaming cỡ lớn (leo nhiều điểm nhất trong 10 ngày an toàn)",v:100000},
+ {g:3,t:"Lội ngược dòng",n:"Ly giữ nhiệt SSC + voucher cà phê (mất 2 mạng nhưng vẫn sống đến chung cuộc, hạng cao nhất)",v:100000}
+];
+var players=[],server=false,flt=0,adm="";
+try{if(new URLSearchParams(location.search).has("admin"))adm=sessionStorage.getItem("adm")||(function(){var k=prompt("Mã admin")||"";sessionStorage.setItem("adm",k);return k;})();}catch(e){}
+function $(i){return document.getElementById(i);}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function dd(n){return new Date(START.getTime()+(n-1)*DAY);}
 function fmt(d){return d.toLocaleDateString("vi-VN",{day:"2-digit",month:"2-digit",timeZone:"Asia/Ho_Chi_Minh"});}
 function cut(n){return new Date(START.getTime()+n*DAY-1000);}
-function $(i){return document.getElementById(i);}
-function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function vnd(n){return n.toLocaleString("vi-VN")+"đ";}
+function tierOf(p){return p>1000?1:2;}
 
-/* Đếm ngược tới mốc kế tiếp */
+/* Đếm ngược */
 var MS=[[START,"đến khi bắt đầu leo rank"],[cut(SAFE+1),"đến lần loại đầu tiên"],[cut(LAST),"đến chung cuộc"]];
 function tick(){
   var now=new Date(),m=null;
   for(var i=0;i<MS.length;i++){if(MS[i][0]>now){m=MS[i];break;}}
   if(!m){$("count").innerHTML="";$("cl").textContent="Sự kiện đã kết thúc";return;}
-  var diff=m[0]-now,d=Math.floor(diff/DAY),h=Math.floor(diff%DAY/36e5),mi=Math.floor(diff%36e5/6e4),s=Math.floor(diff%6e4/1e3);
+  var f=m[0]-now,d=Math.floor(f/DAY),h=Math.floor(f%DAY/36e5),mi=Math.floor(f%36e5/6e4),s=Math.floor(f%6e4/1e3);
   $("count").innerHTML=[[d,"ngày"],[h,"giờ"],[mi,"phút"],[s,"giây"]].map(function(x){return "<div><b>"+x[0]+"</b><span>"+x[1]+"</span></div>";}).join("");
   var n=Math.floor((now-START)/DAY)+1,ph="";
-  if(n>=1&&n<=SAFE)ph="Ngày "+n+"/"+SAFE+" – giai đoạn an toàn · ";
-  else if(n>SAFE)ph="Đang trong giai đoạn loại · ";
+  if(n>=1&&n<=SAFE)ph="Ngày "+n+"/"+SAFE+" – giai đoạn an toàn · ";else if(n>SAFE)ph="Đang trong giai đoạn loại · ";
   $("cl").textContent=ph+"Còn lại "+m[1];
 }
 tick();setInterval(tick,1000);
 
-/* Bảng ngưỡng */
-$("pd").textContent=PER_DIV;
-var rows="<tr><th class=c>Ngày</th><th class=c>Giờ cắt (23:59)</th><th class=c>An toàn nếu</th></tr>";
-for(var d=SAFE+1;d<=LAST;d++){
-  var top=Math.max(1,Math.round(BOX[d-SAFE-1]/BASE*PER_DIV));
-  rows+="<tr><td class=c>Ngày "+d+"</td><td class=c>"+fmt(dd(d))+"</td><td class=c><b>Top "+top+"</b></td></tr>";
-}
-$("thr").innerHTML=rows;
+/* Phần thưởng */
+(function(){
+  var tot=0,h={1:"",2:"",3:""};
+  PRIZES.forEach(function(p){tot+=p.v;h[p.g]+="<div><small>"+p.t+"</small><b>"+vnd(p.v)+"</b><span>"+p.n+"</span></div>";});
+  $("tot").textContent=vnd(tot);$("pz1").innerHTML=h[1];$("pz2").innerHTML=h[2];$("pz3").innerHTML=h[3];
+})();
 
-/* Dữ liệu người chơi (tạm lưu trong trình duyệt) */
-function load(){try{return JSON.parse(localStorage.getItem(KEY))||[];}catch(e){return [];}}
-function save(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}}
-var mem=load();
-function parse(v){
-  v=v.trim();var i=v.lastIndexOf("#");
-  if(i<1)return null;
-  var n=v.slice(0,i).trim(),t=v.slice(i+1).trim();
-  if(!n||t.length<2||t.length>5||/\s/.test(t))return null;
-  return {name:n,tag:t,url:"https://lolchess.gg/profile/"+REGION+"/"+encodeURIComponent(n)+"-"+encodeURIComponent(t)};
+/* Rank */
+function score(r){if(!r||r.tier==="UNRANKED")return -1;var i=ORD.indexOf(r.tier);return i>=7?2800+r.lp:i*400+(DV[r.div]||0)*100+r.lp;}
+function rankTxt(p){var r=p.rank;if(!r)return "–";if(r.tier==="UNRANKED")return "Chưa xếp hạng";return TV[r.tier]+(ORD.indexOf(r.tier)<7?" "+r.div:"");}
+function lpTxt(p){var r=p.rank;return r&&r.tier!=="UNRANKED"?r.lp+" LP":"–";}
+function link(n,t,s){return "https://lolchess.gg/profile/"+REGION+"/"+encodeURIComponent(n)+"-"+encodeURIComponent(t)+(s?"/set18":"");}
+
+/* Dữ liệu */
+function load(){
+  return fetch(API).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){server=true;players=j.players||[];})
+  .catch(function(){server=false;try{players=JSON.parse(localStorage.getItem(LS))||[];}catch(e){players=[];}}).then(render);
 }
-function refresh(){
-  $("cnt").textContent=mem.length+"/"+CAP+" người đã đăng ký";
-  $("bar").style.width=Math.min(100,mem.length/CAP*100)+"%";
-  $("dsub").textContent=mem.length+" người đã đăng ký · chia thành 2 division";
-  var h="<tr><th class=c>#</th><th>Người chơi</th><th>Lolchess</th><th class=c>Division</th><th></th></tr>";
-  if(!mem.length)h+="<tr><td colspan=5 class=empty>Chưa có ai đăng ký. Hãy là người đầu tiên!</td></tr>";
-  mem.forEach(function(p,i){
-    h+="<tr><td class=c>"+(i+1)+"</td><td><b>"+esc(p.name)+"</b> <span style='color:var(--muted)'>#"+esc(p.tag)+"</span></td><td><a class=pl href='"+esc(p.url)+"' target=_blank rel=noopener>Xem hồ sơ</a></td><td class=c>Chưa chia</td><td><button class=x data-i='"+i+"' title='Xóa' aria-label='Xóa người chơi'>×</button></td></tr>";
+function render(){
+  var c1=players.filter(function(p){return p.tier===1;}).length,c2=players.length-c1;
+  $("cnt").textContent=players.length+"/"+CAP+" người đã đăng ký";
+  $("bar").style.width=Math.min(100,players.length/CAP*100)+"%";
+  $("dsub").textContent=players.length+" người · Tier 1: "+c1+" · Tier 2: "+c2;
+  $("dnote").textContent=server?"Rank và điểm được cập nhật tự động từ Riot (làm mới sau vài phút).":"Chế độ thử: danh sách lưu trên trình duyệt này, chưa có dữ liệu rank trực tiếp.";
+  $("chips").innerHTML=[["Tất cả",0],["Tier 1",1],["Tier 2",2]].map(function(x){return "<button data-f='"+x[1]+"' class='"+(flt===x[1]?"on":"")+"'>"+x[0]+"</button>";}).join("");
+  var list=players.slice().sort(function(a,b){return a.tier-b.tier||score(b.rank)-score(a.rank)||b.peak-a.peak;}).filter(function(p){return !flt||p.tier===flt;});
+  var h="<tr><th class=c>#</th><th>Người chơi</th><th class=c>Tier</th><th>Rank hiện tại</th><th class=c>Điểm</th><th class=c>Đỉnh S18</th><th></th></tr>";
+  if(!list.length)h+="<tr><td colspan=7 class=empty>Chưa có người chơi nào.</td></tr>";
+  list.forEach(function(p,i){
+    h+="<tr><td class=c>"+(i+1)+"</td><td><a class=pl href='"+esc(link(p.name,p.tag))+"' target=_blank rel=noopener>"+esc(p.name)+"</a> <span style='color:var(--muted)'>#"+esc(p.tag)+"</span></td><td class=c><span class='tag t"+p.tier+"'>Tier "+p.tier+"</span></td><td>"+rankTxt(p)+"</td><td class=c>"+lpTxt(p)+"</td><td class=c><a class=pl href='"+esc(link(p.name,p.tag,1))+"' target=_blank rel=noopener>"+p.peak+"</a></td><td>"+((adm||!server)?"<button class=x data-id='"+esc(p.id)+"' aria-label='Xóa người chơi'>×</button>":"")+"</td></tr>";
   });
   $("tbl").innerHTML=h;
+  var s1=c1||DEF,s2=c2||DEF,t="<tr><th class=c>Ngày</th><th class=c>Giờ cắt (23:59)</th><th class=c>Tier 1 ("+s1+" người)</th><th class=c>Tier 2 ("+s2+" người)</th></tr>";
+  for(var d=SAFE+1;d<=LAST;d++){var r=BOX[d-SAFE-1]/BASE;
+    t+="<tr><td class=c>Ngày "+d+"</td><td class=c>"+fmt(dd(d))+"</td><td class=c><b>Top "+Math.max(1,Math.round(r*s1))+"</b></td><td class=c><b>Top "+Math.max(1,Math.round(r*s2))+"</b></td></tr>";}
+  $("thr").innerHTML=t;
 }
-$("rid").addEventListener("input",function(){
-  var p=parse(this.value);
-  $("prev").style.display=p?"block":"none";
-  $("go").disabled=!p;$("msg").textContent="";
-  if(p){$("lnk").textContent=p.url;$("open").href=p.url;}
+$("chips").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;flt=+b.dataset.f;render();});
+$("tbl").addEventListener("click",function(e){
+  var b=e.target.closest("button.x");if(!b)return;var id=b.dataset.id;
+  if(server)fetch(API+"?id="+encodeURIComponent(id),{method:"DELETE",headers:{"x-admin-key":adm}}).then(load);
+  else{players=players.filter(function(p){return p.id!==id;});try{localStorage.setItem(LS,JSON.stringify(players));}catch(x){}render();}
 });
+
+/* Đăng ký */
+function parse(v){
+  v=v.trim();var i=v.lastIndexOf("#");if(i<1)return null;
+  var n=v.slice(0,i).trim(),t=v.slice(i+1).trim();
+  return(!n||t.length<2||t.length>5||/\s/.test(t))?null:{name:n,tag:t};
+}
+function upd(){
+  var p=parse($("rid").value),pk=$("peak").value,ok=p&&pk!==""&&+pk>=0;
+  $("go").disabled=!ok;$("msg").textContent="";
+  $("prev").style.display=p?"block":"none";
+  if(p){$("l1").href=link(p.name,p.tag);$("l2").href=link(p.name,p.tag,1);}
+  $("ptier").innerHTML=pk!==""&&+pk>=0?"Bạn sẽ được xếp vào <b>Tier "+tierOf(+pk)+"</b>. Kiểm tra điểm cao nhất mùa 18 tại link bên dưới.":"Nhập điểm cao nhất mùa 18 để biết tier.";
+}
+$("rid").addEventListener("input",upd);$("peak").addEventListener("input",upd);
+function say(t,ok){$("msg").className=ok?"ok":"bad";$("msg").textContent=t;}
+function done(p){say("Đã đăng ký "+p.name+"#"+p.tag+". Xem tại tab Danh sách.",1);$("rid").value="";$("peak").value="";upd();}
 function reg(){
-  var p=parse($("rid").value);if(!p)return;
-  var m=$("msg");
-  if(mem.length>=CAP){m.className="bad";m.textContent="Đã đủ "+CAP+" người.";return;}
-  var dup=mem.some(function(x){return x.name.toLowerCase()===p.name.toLowerCase()&&x.tag.toLowerCase()===p.tag.toLowerCase();});
-  if(dup){m.className="bad";m.textContent="Tên này đã đăng ký rồi.";return;}
-  mem.push(p);save(mem);refresh();
-  m.className="ok";m.textContent="Đã đăng ký "+p.name+"#"+p.tag+". Xem tại tab Danh sách.";
-  $("rid").value="";$("prev").style.display="none";$("go").disabled=true;
+  var p=parse($("rid").value),pk=$("peak").value;if(!p||pk===""||+pk<0)return;
+  var peak=Math.floor(+pk),id=(p.name+"#"+p.tag).toLowerCase();
+  if(server){
+    $("go").disabled=true;
+    fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:p.name,tag:p.tag,peak:peak})})
+    .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+    .then(function(x){if(!x.ok){say(x.j.error||"Có lỗi, thử lại sau.",0);upd();return;}done(p);load();})
+    .catch(function(){say("Không kết nối được máy chủ.",0);upd();});
+    return;
+  }
+  if(players.length>=CAP)return say("Đã đủ "+CAP+" người.",0);
+  if(players.some(function(x){return x.id===id;}))return say("Tên này đã đăng ký rồi.",0);
+  players.push({id:id,name:p.name,tag:p.tag,peak:peak,tier:tierOf(peak)});
+  try{localStorage.setItem(LS,JSON.stringify(players));}catch(e){}
+  done(p);render();
 }
 $("go").addEventListener("click",reg);
-$("rid").addEventListener("keydown",function(e){if(e.key==="Enter")reg();});
-$("tbl").addEventListener("click",function(e){
-  var b=e.target.closest("button.x");if(!b)return;
-  mem.splice(+b.dataset.i,1);save(mem);refresh();
-});
-refresh();
+$("peak").addEventListener("keydown",function(e){if(e.key==="Enter")reg();});
+upd();load();if(server!==null)setInterval(function(){if(server)load();},120000);
 
 /* Chuyển trang theo hash */
 function route(){
